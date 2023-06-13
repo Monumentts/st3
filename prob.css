@@ -1,0 +1,33 @@
+/* Загальні стилі для всіх пристроїв */
+.my-element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* Стилі для пристроїв з розміром екрану менше або рівно 600px */
+@media (max-width: 600px) {
+  .my-element {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+  }
+}
+
+/* Стилі для пристроїв з розміром екрану більше 600px і менше або рівно 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+  .my-element {
+    width: 75px;
+    height: 75px;
+    background-color: green;
+  }
+}
+
+/* Стилі для пристроїв з розміром екрану більше 1200px */
+@media (min-width: 1201px) {
+  .my-element {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+  }
+}
